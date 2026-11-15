@@ -15,6 +15,7 @@ CREATE TABLE Warehouses (
     CountryID INT,
     WarehouseAddress VARCHAR(50),
     
+    FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE NO ACTION,
     PRIMARY KEY (ID)
 );
 
